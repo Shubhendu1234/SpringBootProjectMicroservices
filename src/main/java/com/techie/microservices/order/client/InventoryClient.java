@@ -21,6 +21,7 @@ public interface InventoryClient {
 
 
     // Fallback method
+    //new comment just to check git push
     default boolean fallbackMethod(String skuCode, Integer quantity, Throwable throwable) {
         log.info("Cannot get inventory for skuCode {}, failure reason: {}", skuCode, throwable.getMessage());
         return false;
